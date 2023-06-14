@@ -1,13 +1,15 @@
 <template>
   <headr/>
+  <collection/>
 </template>
 
 <script>
   import headr from './components/header/header.vue';
+  import collection from './components/collection/collection.vue';
 
   export default {
     components: {
-      headr,
+      headr, collection,
     }
   }
 </script>
