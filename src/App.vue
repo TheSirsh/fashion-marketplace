@@ -3,6 +3,7 @@
   <collection/>
   <clothes/>
   <brends/>
+  <about/>
 </template>
 
 <script>
@@ -10,10 +11,11 @@
   import collection from '@/components/collection/collection.vue';
   import clothes from '@/components/clothes/clothes.vue';
   import brends from '@/components/brends/brends.vue';
+  import about from '@/components/about/about.vue';
 
   export default {
     components: {
-      headr, collection, clothes, brends,
+      headr, collection, clothes, brends, about,
     }
   }
 </script>
