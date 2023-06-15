@@ -15,3 +15,14 @@
     }
   }
 </script>
+
+<style scoped>
+  section {
+    width: calc(100vw / 1.2);
+    height: calc(100vw / 2.79);
+    margin: calc(100vw / 80) auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+</style>
