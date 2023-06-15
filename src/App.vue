@@ -2,16 +2,18 @@
   <headr/>
   <collection/>
   <clothes/>
+  <brends/>
 </template>
 
 <script>
-  import headr from './components/header/header.vue';
-  import collection from './components/collection/collection.vue';
-  import clothes from './components/clothes/clothes.vue';
+  import headr from "@/components/header/header.vue";
+  import collection from '@/components/collection/collection.vue';
+  import clothes from '@/components/clothes/clothes.vue';
+  import brends from '@/components/brends/brends.vue';
 
   export default {
     components: {
-      headr, collection, clothes,
+      headr, collection, clothes, brends,
     }
   }
 </script>
