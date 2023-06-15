@@ -1,15 +1,17 @@
 <template>
   <headr/>
   <collection/>
+  <clothes/>
 </template>
 
 <script>
   import headr from './components/header/header.vue';
   import collection from './components/collection/collection.vue';
+  import clothes from './components/clothes/clothes.vue';
 
   export default {
     components: {
-      headr, collection,
+      headr, collection, clothes,
     }
   }
 </script>
@@ -62,7 +64,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 100vh;
   background: linear-gradient(to bottom right, #984D38 -20%, #181E41 70%);
   overflow-x: hidden;
 }
