@@ -15,3 +15,11 @@
     }
   }
 </script>
+
+<style scoped>
+  section {
+    width: calc(100vw / 1.20);
+    height: calc(100vw / 0.76);
+    margin: calc(100vw / 9.6) auto;
+  }
+</style>
