@@ -5,6 +5,7 @@
   <brends/>
   <about/>
   <labels/>
+  <panel/>
 </template>
 
 <script>
@@ -14,10 +15,11 @@
   import brends from '@/components/brends/brends.vue';
   import about from '@/components/about/about.vue';
   import labels from "@/components/labels/labels.vue";
+  import panel from "@/components/panel/panel.vue";
 
   export default {
     components: {
-      headr, collection, clothes, brends, about, labels,
+      headr, collection, clothes, brends, about, labels, panel,
     }
   }
 </script>
