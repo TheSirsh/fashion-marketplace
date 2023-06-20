@@ -11,6 +11,7 @@
   <brends2/>
   <faq/>
   <start/>
+  <footr/>
 </template>
 
 <script>
@@ -26,10 +27,11 @@
   import brends2 from "@/components/brends2/brends2.vue";
   import faq from "@/components/faq/faq.vue";
   import start from "@/components/start/start.vue";
+  import footr from "@/components/footer/footer.vue";
 
   export default {
     components: { 
-      headr, collection, clothes, brends, about, labels, panel, trending, creators, brends2, faq, start,
+      headr, collection, clothes, brends, about, labels, panel, trending, creators, brends2, faq, start, footr,
     }
   }
 </script>
