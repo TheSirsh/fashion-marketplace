@@ -7,6 +7,7 @@
   <labels/>
   <panel/>
   <trending/>
+  <creators/>
 </template>
 
 <script>
@@ -18,10 +19,11 @@
   import labels from "@/components/labels/labels.vue";
   import panel from "@/components/panel/panel.vue";
   import trending from "@/components/trending/trending.vue";
+  import creators from "@/components/creators/creators.vue";
 
   export default {
     components: {
-      headr, collection, clothes, brends, about, labels, panel, trending,
+      headr, collection, clothes, brends, about, labels, panel, trending, creators,
     }
   }
 </script>
