@@ -9,6 +9,7 @@
   <trending/>
   <creators/>
   <brends2/>
+  <faq/>
 </template>
 
 <script>
@@ -22,10 +23,11 @@
   import trending from "@/components/trending/trending.vue";
   import creators from "@/components/creators/creators.vue";
   import brends2 from "@/components/brends2/brends2.vue";
+  import faq from "@/components/faq/faq.vue";
 
   export default {
     components: {
-      headr, collection, clothes, brends, about, labels, panel, trending, creators, brends2,
+      headr, collection, clothes, brends, about, labels, panel, trending, creators, brends2, faq,
     }
   }
 </script>
