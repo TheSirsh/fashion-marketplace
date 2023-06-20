@@ -10,6 +10,7 @@
   <creators/>
   <brends2/>
   <faq/>
+  <start/>
 </template>
 
 <script>
@@ -24,10 +25,11 @@
   import creators from "@/components/creators/creators.vue";
   import brends2 from "@/components/brends2/brends2.vue";
   import faq from "@/components/faq/faq.vue";
+  import start from "@/components/start/start.vue";
 
   export default {
-    components: {
-      headr, collection, clothes, brends, about, labels, panel, trending, creators, brends2, faq,
+    components: { 
+      headr, collection, clothes, brends, about, labels, panel, trending, creators, brends2, faq, start,
     }
   }
 </script>
