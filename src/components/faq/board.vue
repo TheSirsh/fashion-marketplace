@@ -1,17 +1,23 @@
 <template>
   <div>
-    <input type="text" placeholder="Lorem ipsum ipsum ?">
-    <input type="text" placeholder="Lorem ipsum ipsum ?">
-    <input type="text" placeholder="Lorem ipsum ipsum ?">
-    <input type="text" placeholder="Lorem ipsum ipsum ?">
-    <input type="text" placeholder="Lorem ipsum ipsum ?">
-    <input type="text" placeholder="Lorem ipsum ipsum ?">
+    <input v-for="inpt in inpts" type="text" :placeholder="inpt.placeholder">
   </div>
 </template>
 
 <script>
   export default {
-
+    data() {
+      return {
+        inpts: [
+          { placeholder: "Lorem ipsum ipsum ?", },
+          { placeholder: "Lorem ipsum ipsum ?", },
+          { placeholder: "Lorem ipsum ipsum ?", },
+          { placeholder: "Lorem ipsum ipsum ?", },
+          { placeholder: "Lorem ipsum ipsum ?", },
+          { placeholder: "Lorem ipsum ipsum ?", },
+        ],
+      }
+    }
   }
 </script>
 
