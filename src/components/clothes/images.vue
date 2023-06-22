@@ -1,18 +1,29 @@
 <template>
   <div>
-    <img src="@/assets/jpg/img1.jpg" alt="">
-    <img src="@/assets/jpg/img2.jpg" alt="">
-    <img src="@/assets/jpg/img3.jpg" alt="">
-    <img src="@/assets/jpg/img4.jpg" alt="">
-    <img src="@/assets/jpg/img5.jpg" alt="">
-    <img src="@/assets/jpg/img6.jpg" alt="">
-    <img src="@/assets/jpg/img7.jpg" alt="">
+    <img v-for="image in images" :src="setImage(image.src)" :alt="image.alt">
   </div>
 </template>
 
 <script>
   export default {
-
+    data() {
+      return {
+        images: [
+          { src: "1", alt: "1", },
+          { src: "2", alt: "2", },
+          { src: "3", alt: "3", },
+          { src: "4", alt: "4", },
+          { src: "5", alt: "5", },
+          { src: "6", alt: "6", },
+          { src: "7", alt: "7", },
+        ],
+      }
+    },
+    methods: {
+      setImage(src) {
+        return require(`@/assets/jpg/img${src}.jpg`)
+      },
+    },
   }
 </script>
 

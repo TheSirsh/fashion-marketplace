@@ -11,17 +11,9 @@
       </button>
     </div>
     <div class="text-container">
-      <div class="text-container_inner">
-        <p class="text-container_number">100+</p>
-        <p class="text-container_text">Brands</p>
-      </div>
-      <div class="text-container_inner">
-        <p class="text-container_number">20k+</p>
-        <p class="text-container_text">Fashion Designer</p>
-      </div>
-      <div class="text-container_inner">
-        <p class="text-container_number">60+</p>
-        <p class="text-container_text">Fashion Shows</p>
+      <div class="text-container_inner" v-for="descr in descrs">
+        <p class="text-container_number">{{ descr.number }}</p>
+        <p class="text-container_text">{{ descr.text }}</p>
       </div>
     </div>
   </div>
@@ -29,7 +21,15 @@
 
 <script>
   export default {
-
+    data() {
+      return {
+        descrs: [
+          { number: "100+", text: "Brands", },
+          { number: "20k+", text: "Fashion Designer", },
+          { number: "60+", text: "Fashion Shows", },
+        ],
+      }
+    },
   }
 </script>
 
