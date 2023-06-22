@@ -10,33 +10,30 @@
     <div>
       <h3>About</h3>
       <ul>
-        <li>Product</li>
-        <li>Resource</li>
-        <li>Term & Condition</li>
-        <li>FAQ</li>
+        <li v-for="about in abouts">
+          {{ about.text }}
+        </li>
       </ul>
     </div>
 
     <div>
       <h3>Company</h3>
       <ul>
-        <li>Our Team</li>
-        <li>Partner With Us</li>
-        <li>Privacy & Policy</li>
-        <li>Features</li>
+        <li v-for="company in companies">
+          {{ company.text }}
+        </li>
       </ul>
     </div>
 
     <div>
       <h3>Contact</h3>
       <ul>
-        <li>+012 3456789</li>
-        <li>adorableprogrammer@gmail.com</li>
+        <li v-for="contact in contacts">
+          {{ contact.text }}
+        </li>
       </ul>
       <div class="social-container">
-        <img src="@/assets/svg/footer-youtube.svg" alt="">
-        <img src="@/assets/svg/footer-discord.svg" alt="">
-        <img src="@/assets/svg/footer-instagram.svg" alt="">
+        <img v-for="social in socials" :src="setImage(social.src)" :alt="social.alt">
       </div>
     </div>
   </footer>
@@ -44,7 +41,36 @@
 
 <script>
   export default {
-
+    data() {
+      return {
+        abouts: [
+          { text: "Product", },
+          { text: "Resource", },
+          { text: "Term & Condition", },
+          { text: "FAQ", },
+        ],
+        companies: [
+          { text: "Our Team", },
+          { text: "Partner With Us", },
+          { text: "Privacy & Policy", },
+          { text: "Features", },
+        ],
+        contacts: [
+          { text: "+012 3456789", },
+          { text: "adorableprogrammer@gmail.com", },
+        ],
+        socials: [
+          { src: "youtube", alt: "YouTube", },
+          { src: "discord", alt: "Discord", },
+          { src: "instagram", alt: "Instagram", },
+        ]
+      }
+    },
+    methods: {
+      setImage(src) {
+        return require(`@/assets/svg/footer-${src}.svg`)
+      },
+    },
   }
 </script>
 
