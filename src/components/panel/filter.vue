@@ -16,9 +16,9 @@
           { text: "Verified Artists", },
           { text: "New Drops", },
           { text: "Live Shows", },
-        ]
+        ],
       }
-    }
+    },
   }
 </script>
 

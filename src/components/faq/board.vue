@@ -17,7 +17,7 @@
           { placeholder: "Lorem ipsum ipsum ?", },
         ],
       }
-    }
+    },
   }
 </script>
 

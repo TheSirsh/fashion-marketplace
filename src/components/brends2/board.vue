@@ -23,14 +23,14 @@
           { bgSrc: "bg1_adidas", bgAlt: "Adidas", fotoSrc: "foto1_adidas", fotoAlt: "Adidas", h3: "Adidas", p: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", span: "+ Follow", },
           { bgSrc: "bg2_nike", bgAlt: "Nike", fotoSrc: "foto2_nike", fotoAlt: "Nike", h3: "Nike", p: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", span: "+ Follow", },
           { bgSrc: "bg3_lacoste", bgAlt: "Lacoste", fotoSrc: "foto3_lacoste", fotoAlt: "Lacoste", h3: "Lacoste", p: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", span: "+ Follow", },
-        ]
+        ],
       }
     },
     methods: {
       setImage(src) {
         return require(`@/assets/jpg/brands2-${src}.jpg`)
-      }
-    }
+      },
+    },
   }
 </script>
 

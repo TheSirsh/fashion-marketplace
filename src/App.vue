@@ -32,7 +32,7 @@
   export default {
     components: { 
       headr, collection, clothes, brends, about, labels, panel, trending, creators, brends2, faq, start, footr,
-    }
+    },
   }
 </script>
 

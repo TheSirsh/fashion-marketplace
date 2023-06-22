@@ -63,7 +63,7 @@
           { src: "youtube", alt: "YouTube", },
           { src: "discord", alt: "Discord", },
           { src: "instagram", alt: "Instagram", },
-        ]
+        ],
       }
     },
     methods: {

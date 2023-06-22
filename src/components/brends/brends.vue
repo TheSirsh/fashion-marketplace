@@ -9,17 +9,17 @@
     data() {
       return {
         images: [
-          {src: "adidas", alt: "adidas"},
-          {src: "puma", alt: "Puma"},
-          {src: "lacoste", alt: "Lacoste"},
+          { src: "adidas", alt: "adidas", },
+          { src: "puma", alt: "Puma", },
+          { src: "lacoste", alt: "Lacoste", },
         ],
       }
     },
     methods: {
       setImage(src) {
         return require(`@/assets/svg/${src}.svg`)
-      }
-    }
+      },
+    },
   }
 </script>
 

@@ -7,12 +7,12 @@
 </template>
 
 <script>
-  import board from './board.vue';
+  import board from "@/components/brends2/board.vue";
 
   export default {
     components: {
       board,
-    }
+    },
   }
 </script>
 

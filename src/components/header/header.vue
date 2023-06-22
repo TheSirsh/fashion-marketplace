@@ -10,14 +10,14 @@
 </template>
 
 <script>
-  import searchBar from './search-bar.vue';
-  import navigPanel from './navig-panel.vue';
-  import controlPanel from './control-panel.vue';
+  import searchBar from "@/components/header/search-bar.vue";
+  import navigPanel from "@/components/header/navig-panel.vue";
+  import controlPanel from "@/components/header/control-panel.vue";
 
   export default {
     components: {
       searchBar, navigPanel, controlPanel,
-    }
+    },
   }
 </script>
 

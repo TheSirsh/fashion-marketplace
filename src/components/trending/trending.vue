@@ -7,12 +7,12 @@
 </template>
 
 <script>
-  import items from './items.vue';
+  import items from "@/components/trending/items.vue";
 
   export default {
     components: {
       items,
-    }
+    },
   }
 </script>
 
