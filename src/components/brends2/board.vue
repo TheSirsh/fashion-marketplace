@@ -1,38 +1,14 @@
 <template>
   <div class="main-container">
 
-    <div class="card-container">
-      <img src="@/assets/jpg/brands2-bg1_adidas.jpg" alt="" class="creators-bg">
+    <div class="card-container" v-for="creator in creators">
+      <img :src="setImage(creator.bgSrc)" :alt="creator.bgAlt" class="creators-bg">
         <div class="text-container">
-        <img src="@/assets/jpg/brands2-foto1_adidas.jpg" alt="" class="creators-foto">
-        <h3>Adidas</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img :src="setImage(creator.fotoSrc)" :alt="creator.fotoAlt" class="creators-foto">
+        <h3>{{ creator.h3 }}</h3>
+        <p>{{ creator.p }}</p>
         <button>
-          <span>+ Follow</span>
-        </button>
-      </div>
-    </div>
-    
-    <div class="card-container">
-      <img src="@/assets/jpg/brands2-bg2_nike.jpg" alt="" class="creators-bg">
-        <div class="text-container">
-        <img src="@/assets/jpg/brands2-foto2_nike.jpg" alt="" class="creators-foto">
-        <h3>Nike</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button>
-          <span>+ Follow</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="card-container">
-      <img src="@/assets/jpg/brands2_bg3_lacoste.jpg" alt="" class="creators-bg">
-        <div class="text-container">
-        <img src="@/assets/jpg/brands2_foto3_lacoste.jpg" alt="" class="creators-foto">
-        <h3>Lacoste</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button>
-          <span>+ Follow</span>
+          <span>{{ creator.span }}</span>
         </button>
       </div>
     </div>
@@ -41,7 +17,20 @@
 
 <script>
   export default {
-
+    data() {
+      return {
+        creators: [
+          { bgSrc: "bg1_adidas", bgAlt: "Adidas", fotoSrc: "foto1_adidas", fotoAlt: "Adidas", h3: "Adidas", p: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", span: "+ Follow", },
+          { bgSrc: "bg2_nike", bgAlt: "Nike", fotoSrc: "foto2_nike", fotoAlt: "Nike", h3: "Nike", p: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", span: "+ Follow", },
+          { bgSrc: "bg3_lacoste", bgAlt: "Lacoste", fotoSrc: "foto3_lacoste", fotoAlt: "Lacoste", h3: "Lacoste", p: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", span: "+ Follow", },
+        ]
+      }
+    },
+    methods: {
+      setImage(src) {
+        return require(`@/assets/jpg/brands2-${src}.jpg`)
+      }
+    }
   }
 </script>
 
