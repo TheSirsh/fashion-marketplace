@@ -1,182 +1,22 @@
 <template>
   <div class="main-container">
     
-    <div class="container">
-      <img src="@/assets/jpg/panel-img1.jpg" alt="" class="pict">
+    <div class="container" v-for="item in items">
+      <img :src="setImage(item.pictSrc)" :alt="item.pictAlt" class="pict">
       <div class="upper-text">
-        <span class="upper-text_left">@Johny</span>
-        <span class="upper-text_right">Current Bid</span>
+        <span class="upper-text_left">{{ item.sellerName }}</span>
+        <span class="upper-text_right">{{ item.bidText }}</span>
       </div>
       <div class="middle-text">
-        <span>Lorem Ipsum</span>
-        <span>>0.005 ETH</span>
+        <span>{{ item.text }}</span>
+        <span>{{ item.bid }}</span>
       </div>
       <div class="bottom-text">
         <button class="button-like">
-          <img src="@/assets/svg/panel-heart.svg" alt="" class="img-like">
+          <img :src="setImage(item.buttonSrc)" :alt="item.buttonAlt" class="img-like">
         </button>
         <button class="button-buy">
-          <span>Buy Now</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <img src="@/assets/jpg/panel-img2.jpg" alt="" class="pict">
-      <div class="upper-text">
-        <span class="upper-text_left">@Johny</span>
-        <span class="upper-text_right">Current Bid</span>
-      </div>
-      <div class="middle-text">
-        <span>Lorem Ipsum</span>
-        <span>>0.005 ETH</span>
-      </div>
-      <div class="bottom-text">
-        <button class="button-like">
-          <img src="@/assets/svg/panel-heart.svg" alt="" class="img-like">
-        </button>
-        <button class="button-buy">
-          <span>Buy Now</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <img src="@/assets/jpg/panel-img3.jpg" alt="" class="pict">
-      <div class="upper-text">
-        <span class="upper-text_left">@Johny</span>
-        <span class="upper-text_right">Current Bid</span>
-      </div>
-      <div class="middle-text">
-        <span>Lorem Ipsum</span>
-        <span>>0.005 ETH</span>
-      </div>
-      <div class="bottom-text">
-        <button class="button-like">
-          <img src="@/assets/svg/panel-heart.svg" alt="" class="img-like">
-        </button>
-        <button class="button-buy">
-          <span>Buy Now</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <img src="@/assets/jpg/panel-img4.jpg" alt="" class="pict">
-      <div class="upper-text">
-        <span class="upper-text_left">@Johny</span>
-        <span class="upper-text_right">Current Bid</span>
-      </div>
-      <div class="middle-text">
-        <span>Lorem Ipsum</span>
-        <span>>0.005 ETH</span>
-      </div>
-      <div class="bottom-text">
-        <button class="button-like">
-          <img src="@/assets/svg/panel-heart.svg" alt="" class="img-like">
-        </button>
-        <button class="button-buy">
-          <span>Buy Now</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <img src="@/assets/jpg/panel-img5.jpg" alt="" class="pict">
-      <div class="upper-text">
-        <span class="upper-text_left">@Johny</span>
-        <span class="upper-text_right">Current Bid</span>
-      </div>
-      <div class="middle-text">
-        <span>Lorem Ipsum</span>
-        <span>>0.005 ETH</span>
-      </div>
-      <div class="bottom-text">
-        <button class="button-like">
-          <img src="@/assets/svg/panel-heart.svg" alt="" class="img-like">
-        </button>
-        <button class="button-buy">
-          <span>Buy Now</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <img src="@/assets/jpg/panel-img6.jpg" alt="" class="pict">
-      <div class="upper-text">
-        <span class="upper-text_left">@Johny</span>
-        <span class="upper-text_right">Current Bid</span>
-      </div>
-      <div class="middle-text">
-        <span>Lorem Ipsum</span>
-        <span>>0.005 ETH</span>
-      </div>
-      <div class="bottom-text">
-        <button class="button-like">
-          <img src="@/assets/svg/panel-heart.svg" alt="" class="img-like">
-        </button>
-        <button class="button-buy">
-          <span>Buy Now</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <img src="@/assets/jpg/panel-img7.jpg" alt="" class="pict">
-      <div class="upper-text">
-        <span class="upper-text_left">@Johny</span>
-        <span class="upper-text_right">Current Bid</span>
-      </div>
-      <div class="middle-text">
-        <span>Lorem Ipsum</span>
-        <span>>0.005 ETH</span>
-      </div>
-      <div class="bottom-text">
-        <button class="button-like">
-          <img src="@/assets/svg/panel-heart.svg" alt="" class="img-like">
-        </button>
-        <button class="button-buy">
-          <span>Buy Now</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <img src="@/assets/jpg/panel-img8.jpg" alt="" class="pict">
-      <div class="upper-text">
-        <span class="upper-text_left">@Johny</span>
-        <span class="upper-text_right">Current Bid</span>
-      </div>
-      <div class="middle-text">
-        <span>Lorem Ipsum</span>
-        <span>>0.005 ETH</span>
-      </div>
-      <div class="bottom-text">
-        <button class="button-like">
-          <img src="@/assets/svg/panel-heart.svg" alt="" class="img-like">
-        </button>
-        <button class="button-buy">
-          <span>Buy Now</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <img src="@/assets/jpg/panel-img9.jpg" alt="" class="pict">
-      <div class="upper-text">
-        <span class="upper-text_left">@Johny</span>
-        <span class="upper-text_right">Current Bid</span>
-      </div>
-      <div class="middle-text">
-        <span>Lorem Ipsum</span>
-        <span>>0.005 ETH</span>
-      </div>
-      <div class="bottom-text">
-        <button class="button-like">
-          <img src="@/assets/svg/panel-heart.svg" alt="" class="img-like">
-        </button>
-        <button class="button-buy">
-          <span>Buy Now</span>
+          <span>{{ item.buttonSpan }}</span>
         </button>
       </div>
     </div>
@@ -186,7 +26,26 @@
 
 <script>
   export default {
-
+    data() {
+      return {
+        items: [
+          { pictSrc: "jpg/panel-img1.jpg", pictAlt: "1", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
+          { pictSrc: "jpg/panel-img2.jpg", pictAlt: "2", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
+          { pictSrc: "jpg/panel-img3.jpg", pictAlt: "3", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
+          { pictSrc: "jpg/panel-img4.jpg", pictAlt: "4", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
+          { pictSrc: "jpg/panel-img5.jpg", pictAlt: "5", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
+          { pictSrc: "jpg/panel-img6.jpg", pictAlt: "6", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
+          { pictSrc: "jpg/panel-img7.jpg", pictAlt: "7", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
+          { pictSrc: "jpg/panel-img8.jpg", pictAlt: "8", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
+          { pictSrc: "jpg/panel-img9.jpg", pictAlt: "9", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
+        ],
+      }
+    },
+    methods: {
+      setImage(src) {
+        return require(`@/assets/${src}`)
+      },
+    },
   }
 </script>
 
