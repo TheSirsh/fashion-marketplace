@@ -1,23 +1,28 @@
 <template>
   <div class="main-container">
-    <div>
-      <img src="@/assets/svg/labels-gas.svg" alt="Gas">
-      <p>No Gas Fees</p>
-    </div>
-    <div>
-      <img src="@/assets/svg/labels-nft.svg" alt="NFT">
-      <p>Carbon Netural NFTs</p>
-    </div>
-    <div>
-      <img src="@/assets/svg/labels-transactions.svg" alt="Transactions">
-      <p>Fast And Easy Transactions</p>
+    <div v-for="label in labels">
+      <img :src="setImage(label.src)" :alt="label.alt">
+      <p>{{ label.p }}</p>
     </div>
   </div>
 </template>
 
 <script>
   export default {
-
+    data() {
+      return {
+        labels: [
+          { src: "gas", alt: "Gas", p: "No Gas Fees", },
+          { src: "nft", alt: "NFT", p: "Carbon Netural NFTs", },
+          { src: "transactions", alt: "Transactions", p: "Fast And Easy Transactions", },
+        ],
+      }
+    },
+    methods: {
+      setImage(src) {
+        return require(`@/assets/svg/labels-${src}.svg`)
+      },
+    },
   }
 </script>
 
