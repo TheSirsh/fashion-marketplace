@@ -1,12 +1,19 @@
 <template>
   <section class="main-section">
-    Explore
+    <h2>Explore Collections</h2>
+    <filtr/>
+    <board/>
   </section>
 </template>
 
 <script>
-  export default {
+  import filtr from "@/components/explore/filter.vue";
+  import board from "@/components/explore/board.vue";
 
+  export default {
+    components: {
+      filtr, board,
+    }
   }
 </script>
 
