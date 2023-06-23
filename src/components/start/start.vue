@@ -27,8 +27,8 @@
     height: calc(100vw / 9.6);
     margin: 0px auto;
     padding-top: calc(100vw / 28.8);
-    font-size: calc(100vw / 28.8);
-    font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: 700;
   }
 
   button {
@@ -40,8 +40,7 @@
   }
 
   span {
-    font-size: calc(100vw / 72);
-    font-weight: medium;
+    font-weight: 500;
     color: #ffffff;
   }
 </style>

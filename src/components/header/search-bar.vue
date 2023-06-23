@@ -43,7 +43,7 @@
   }
 
   input::placeholder {
-    font-size: calc(100vw / 102.86);
+    font-size: 0.7rem;
     font-weight: 400;
   }
 </style>

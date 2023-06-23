@@ -25,16 +25,15 @@
 
   h2 {
     width: calc(100vw / 3.72);
-    font-size: calc(100vw / 36);
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 700;
     margin: 0px auto;
   }
 
   p {
     width: calc(100vw / 5.98);
     margin: calc(100vw / 144) auto calc(100vw / 28.8) auto;
-    font-weight: calc(100vw / 72);
-    font-weight: medium;
+    font-weight: 500;
     opacity: 0.5;
   }
 </style>

@@ -40,7 +40,7 @@
   }
 
   h2 {
-    font-size: calc(100vw / 24);
+    font-size: 3rem;
     font-weight: 800;
     text-align: left;
     margin: calc(100vw /120) 0px;
@@ -48,7 +48,6 @@
 
   .main-text {
     margin: 0px;
-    font-size: calc(100vw / 72);
     font-weight: 500;
     text-align: left;
     opacity: 0.5;
@@ -86,7 +85,6 @@
   }
 
   span {
-    font-size: calc(100vw / 72);
     color: #ffffff;
   }
 
@@ -105,14 +103,13 @@
   }
 
   .text-container_number {
-    font-size: calc(100vw / 48);
+    font-size: 1.5rem;
     font-weight: 700;
     margin: 0;
     padding: 0;
   }
 
   .text-container_text {
-    font-size: calc(100vw / 72);
     font-weight: 500;
     margin: 0;
     padding: 0;

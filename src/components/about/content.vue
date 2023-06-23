@@ -42,14 +42,13 @@
   }
 
   h3 {
-    font-size: calc(100vw / 40);
+    font-size: 1.8rem;
     font-weight: 700;
     margin: calc(100vw / 72) 0px;
     text-align: left;
   }
 
   p {
-    font-size: calc(100vw / 72);
     font-weight: 400;
     margin: calc(100vw / 72) 0px;
     text-align: left;
@@ -69,7 +68,6 @@
   }
 
   span {
-    font-size: calc(100vw / 72);
     font-weight: 600;
     color: #ffffff;
   }

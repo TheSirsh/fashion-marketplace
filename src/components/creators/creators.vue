@@ -25,15 +25,14 @@
 
   h2 {
     margin: 0px auto;
-    font-size: calc(100vw / 36);
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 700;
   }
 
   p {
     margin: calc(100vw / 144) auto calc(100vw / 48) auto;
     width: calc(100vw / 3.4);
-    font-size: calc(100vw / 72);
-    font-weight: medium;
+    font-weight: 500;
     opacity: 0.5;
   }
 </style>

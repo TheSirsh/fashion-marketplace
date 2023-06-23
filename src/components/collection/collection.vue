@@ -52,7 +52,7 @@
     height: calc(100vw / 26.18);
     background-color: #493e52;
     font-family: "SF Pro Display";
-    font-size: calc(100vw / 76.68);
+    font-size: 0.94rem;
     font-weight: 500;
     color: #ffffff;
     border: none;

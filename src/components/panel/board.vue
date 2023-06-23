@@ -84,15 +84,11 @@
     align-items: center;
     width: calc(100vw / 4.27);
     opacity: 0.5;
-    font-weight: medium;
-  }
-
-  .upper-text_left {
-    font-size: calc(100vw / 72);
+    font-weight: 500;
   }
 
   .upper-text_right {
-    font-size: calc(100vw / 96);
+    font-size: 0.75rem;
   }
 
   .middle-text {
@@ -101,8 +97,7 @@
     align-items: center;
     width: calc(100vw / 4.27);
     font-family: "Poppins";
-    font-weight: bold;
-    font-size: calc(100vw / 72);
+    font-weight: 700;
   }
 
   .bottom-text {
@@ -141,8 +136,7 @@
   }
 
   span {
-    font-size: calc(100vw / 72);
-    font-weight: semibold;
+    font-weight: 600;
     color: #ffffff;
   }
 

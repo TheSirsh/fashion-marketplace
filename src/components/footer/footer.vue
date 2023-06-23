@@ -84,19 +84,17 @@
   }
 
   h2 {
-    font-size: calc(100vw / 72);
     margin: 0;
     padding: 0;
-    font-weight: bold;
+    font-weight: 700;
     color: #6c5dd3;
     text-align: left;
   }
 
   h3 {
-    font-size: calc(100vw / 72);
     margin: 0;
     padding: 0;
-    font-weight: bold;
+    font-weight: 700;
     text-align: left;
   }
 
@@ -107,8 +105,8 @@
   }
 
   li {
-    font-size: calc(100vw / 96);
-    font-weight: medium;
+    font-size: 0.75rem;
+    font-weight: 500;
     list-style: none;
     opacity: 0.5;
     text-align: left;

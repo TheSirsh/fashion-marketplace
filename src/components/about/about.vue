@@ -25,8 +25,8 @@
 
   h2 {
     font-family: Roboto;
-    font-size: calc(100vw / 36);
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 700;
     margin: 0px;
   }
 
@@ -35,7 +35,6 @@
     margin: calc(100vw / 144) auto;
     text-align: center;
     font-family: Poppins;
-    font-size: calc(100vw / 72);
     color: #888888;
   }
 </style>

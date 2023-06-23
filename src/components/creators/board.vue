@@ -68,14 +68,13 @@
   }
 
   h3 {
-    font-size: calc(100vw / 72);
-    font-weight: bold;
+    font-weight: 700;
     margin: calc(100vw / 144) auto;
   }
 
   p {
     width: calc(100vw / 4.69);
-    font-size: calc(100vw / 96);
+    font-size: 0.75rem;
     margin: 0px auto;
     opacity: 0.5;
   }
@@ -88,6 +87,5 @@
     border: none;
     border-radius: calc(100vw / 144);
     color: #ffffff;
-    font-size: calc(100vw / 72);
   }
 </style>

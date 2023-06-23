@@ -38,14 +38,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: calc(100vw / 90);
+    font-size: 0.8rem;
     font-weight: 600;
   }
 
   .logo {
     font-family: Roboto;
-    font-weight: bold;
-    font-size: calc(100vw / 40);
+    font-weight: 700;
+    font-size: 1.8rem;
     color: #6C5DD3;
   }
 </style>

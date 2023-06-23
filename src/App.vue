@@ -72,6 +72,10 @@
   src: url("@/assets/fonts/SF-Pro-Display-Heavy.otf");
 }
 
+html {
+  font-size: calc(100vw / 72);
+}
+
 #app {
   font-family: "SF Pro Display", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -37,7 +37,6 @@
 
   p {
     margin-top: calc(100vw / 102.86);
-    font-size: calc(100vw / 72);
     font-weight: 600;
   }
 

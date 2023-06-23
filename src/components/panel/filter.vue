@@ -45,7 +45,6 @@
   }
 
   span {
-    font-size: calc(100vw / 72);
     font-weight: 500;
   }
 </style>
