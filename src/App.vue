@@ -1,18 +1,20 @@
 <template>
   <headr/>
-  <home/>
+  <router-view/>
   <footr/>
 </template>
 
 <script>
   import headr from "@/components/header/header.vue";
-  import home from "@/components/home/home.vue";
   import footr from "@/components/footer/footer.vue";
+  import router from "./router";
 
   export default {
-    components: { 
-      headr, home, footr,
-    },
+    components: {
+    headr,
+    footr,
+    router
+},
   }
 </script>
 

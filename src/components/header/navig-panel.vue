@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <li>Home</li>
-    <li>Explore</li>
+    <router-link to="/">Home</router-link>
+    <router-link to="/explore">Explore</router-link>
     <li>Personal Collection</li>
     <li>Drops</li>
     <li>More</li>
@@ -9,8 +9,11 @@
 </template>
 
 <script>
+import router from '@/router/index';
   export default {
-    
+    components: {
+      router,
+    }
   }
 </script>
 
