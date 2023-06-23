@@ -78,7 +78,7 @@
   footer {
     display: flex;
     justify-content: space-between;
-    width: calc(100vw / 1.2);
+    width: 83.33%;
     height: calc(100vw / 7.13);
     margin: calc(100vw / 11.08) auto calc(100vw / 28.5) auto;
   }

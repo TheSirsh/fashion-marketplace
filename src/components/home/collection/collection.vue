@@ -20,7 +20,6 @@
     align-items: center;
     justify-content: space-evenly;
     margin: calc(100vw / 24) auto;
-    width: calc(100vw / 1.45);
     height: calc(100vw / 26.18);
   }
 

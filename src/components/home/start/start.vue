@@ -15,7 +15,6 @@
 
 <style scoped>
   section {
-    width: calc(100vw / 1.20);
     height: calc(100vw / 4.5);
     background: linear-gradient(to top right, #671ae4, #b75cff);
     border-radius: calc(100vw / 144);

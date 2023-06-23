@@ -28,7 +28,7 @@
     margin: calc(100vw / 12.52) auto;
     display: flex;
     justify-content: space-between;
-    width: calc(100vw / 1.45);
+    width: 82.87%;
     height: calc(100vw / 13.98);
   }
 </style>

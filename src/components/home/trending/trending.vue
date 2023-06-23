@@ -1,30 +1,33 @@
 <template>
   <section>
-    <h2>Upcoming Creators</h2>
+    <h2>New & Trending</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <board/>
+    <items/>
   </section>
 </template>
 
 <script>
-  import board from "@/components/creators/board.vue";
+  import items from "@/components/home/trending/items.vue";
 
   export default {
     components: {
-      board,
+      items,
     },
   }
 </script>
 
 <style scoped>
   section {
-    width: calc(100vw / 1.20);
-    height: calc(100vw / 2.10);
-    margin: calc(100vw / 12) auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vw / 1.91);
+    margin: calc(100vw / 9.6) auto;
+    font-family: "Poppins";
   }
 
   h2 {
-    margin: 0px auto;
+    margin: 0;
     font-size: 2rem;
     font-weight: 700;
   }

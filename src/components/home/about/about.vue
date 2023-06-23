@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import content from "@/components/about/content.vue";
+  import content from "@/components/home/about/content.vue";
 
   export default {
     components: {
@@ -18,7 +18,7 @@
 
 <style scoped>
   section {
-    width: calc(100vw / 1.27);
+    width: 94.67%;
     height: calc(100vw / 1.875);
     margin: calc(100vw / 14.12) auto;
   }

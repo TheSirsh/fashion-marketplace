@@ -1,37 +1,17 @@
 <template>
   <headr/>
-  <collection/>
-  <clothes/>
-  <brends/>
-  <about/>
-  <labels/>
-  <panel/>
-  <trending/>
-  <creators/>
-  <brends2/>
-  <faq/>
-  <start/>
+  <home/>
   <footr/>
 </template>
 
 <script>
   import headr from "@/components/header/header.vue";
-  import collection from '@/components/collection/collection.vue';
-  import clothes from '@/components/clothes/clothes.vue';
-  import brends from '@/components/brends/brends.vue';
-  import about from '@/components/about/about.vue';
-  import labels from "@/components/labels/labels.vue";
-  import panel from "@/components/panel/panel.vue";
-  import trending from "@/components/trending/trending.vue";
-  import creators from "@/components/creators/creators.vue";
-  import brends2 from "@/components/brends2/brends2.vue";
-  import faq from "@/components/faq/faq.vue";
-  import start from "@/components/start/start.vue";
+  import home from "@/components/home/home.vue";
   import footr from "@/components/footer/footer.vue";
 
   export default {
     components: { 
-      headr, collection, clothes, brends, about, labels, panel, trending, creators, brends2, faq, start, footr,
+      headr, home, footr,
     },
   }
 </script>

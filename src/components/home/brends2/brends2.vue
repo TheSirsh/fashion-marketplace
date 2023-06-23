@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import board from "@/components/brends2/board.vue";
+  import board from "@/components/home/brends2/board.vue";
 
   export default {
     components: {
@@ -18,7 +18,6 @@
 
 <style scoped>
   section {
-    width: calc(100vw / 1.20);
     height: calc(100vw / 2.10);
     margin: calc(100vw / 12) auto;
   }

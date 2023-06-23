@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import marks from "@/components/labels/marks.vue";
+import marks from "@/components/home/labels/marks.vue";
 
 export default {
   components: {
@@ -21,7 +21,7 @@ export default {
     display: flex;
     flex-direction: column;
     margin: calc(100vw / 12) auto;
-    width: calc(100vw / 1.53);
+    width: 78.42%;
     height: calc(100vw / 4.74)
   }
 
