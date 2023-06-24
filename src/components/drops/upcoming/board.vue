@@ -41,6 +41,7 @@
 <style scoped>
   .main-container {
     width: 100%;
+    margin-top: calc(100vw / 57.6);
     height: calc(100vw / 2.15);
     display: flex;
     justify-content: space-between;

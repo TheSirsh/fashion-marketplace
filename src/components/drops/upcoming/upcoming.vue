@@ -22,3 +22,16 @@
     font-weight: 600;
   }
 </style>
+
+<style scoped>
+  section {
+    width: 100%;
+    margin: calc(100vw / 12) auto;
+  }
+
+  h2 {
+    margin: 0px auto;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+</style>
