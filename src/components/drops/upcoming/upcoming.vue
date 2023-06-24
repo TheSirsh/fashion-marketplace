@@ -14,3 +14,11 @@
     }
   }
 </script>
+
+<style scoped>
+  h2 {
+    margin: 0px auto;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+</style>
