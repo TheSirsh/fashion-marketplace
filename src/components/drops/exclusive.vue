@@ -10,3 +10,19 @@
     
   }
 </script>
+
+<style scoped>
+  h2 {
+    margin: 0px auto;
+    font-size: 3rem;
+    font-weight: 800;
+  }
+
+  p {
+    margin: calc(100vw / 36) auto calc(100vw / 12) auto;
+    width: calc(100vw / 2.33);
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.5;
+  }
+</style>
