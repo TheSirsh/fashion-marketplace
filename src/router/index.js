@@ -12,6 +12,11 @@ const routes = [
     name: "explore",
     component: () => import("@/views/explore.vue"),
   },
+  {
+    path: "/drops",
+    name: "drops",
+    component: () => import("@/views/drops.vue"),
+  },
 ]
 
 const router = createRouter({

@@ -3,7 +3,7 @@
     <router-link to="/">Home</router-link>
     <router-link to="/explore">Explore</router-link>
     <li>Personal Collection</li>
-    <li>Drops</li>
+    <router-link to="/drops">Drops</router-link>
     <li>More</li>
   </nav>
 </template>
