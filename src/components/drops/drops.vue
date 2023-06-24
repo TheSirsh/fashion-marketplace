@@ -1,12 +1,16 @@
 <template>
   <section class="main-section">
-    
+    <exclusive/>
   </section>
 </template>
 
 <script>
-  export default {
+  import exclusive from './exclusive.vue';
 
+  export default {
+    components: {
+      exclusive
+    }
   }
 </script>
 
