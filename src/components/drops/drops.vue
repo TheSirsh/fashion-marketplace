@@ -1,15 +1,17 @@
 <template>
   <section class="main-section">
     <exclusive/>
+    <upcoming/>
   </section>
 </template>
 
 <script>
-  import exclusive from './exclusive.vue';
+  import exclusive from "@/components/drops/exclusive.vue";
+  import upcoming from "@/components/drops/upcoming/upcoming.vue";
 
   export default {
     components: {
-      exclusive
+      exclusive, upcoming, 
     }
   }
 </script>
