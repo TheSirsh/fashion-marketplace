@@ -7,7 +7,7 @@
     <li class="down" @click="activateSubMenu()"
     >More
       <ul class="submenu" v-bind:class="{active: isActive}">
-        <li>Stats</li>
+        <router-link to="/stats">Stats</router-link>
         <li>Shows</li>
         <li>About Us</li>
         <li>Community</li>
