@@ -1,13 +1,13 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link>
-    <router-link to="/explore">Explore</router-link>
+    <router-link to="/" @click="deactivateSubMenu()">Home</router-link>
+    <router-link to="/explore" @click="deactivateSubMenu()">Explore</router-link>
     <li>Personal Collection</li>
-    <router-link to="/drops">Drops</router-link>
-    <li class="down" @click="activeSubMenu()"
+    <router-link to="/drops" @click="deactivateSubMenu()">Drops</router-link>
+    <li class="down" @click="activateSubMenu()"
     >More
       <ul class="submenu" v-bind:class="{active: isActive}">
-        <li >Stats</li>
+        <li>Stats</li>
         <li>Shows</li>
         <li>About Us</li>
         <li>Community</li>
@@ -31,10 +31,13 @@ import router from '@/router/index';
       router,
     },
     methods: {
-      activeSubMenu() {
-        this.isActive = !this.isActive
+      activateSubMenu() {
+        this.isActive = !this.isActive;
+      },
+      deactivateSubMenu() {
+        this.isActive = false;
       }
-    }
+    },
   }
 </script>
 
