@@ -15,5 +15,24 @@
         </button>
       </div>
     </div>
+    <board/>
+    <div>
+      <button>
+        <span>&lt; 1-100</span>
+      </button>
+      <button>
+        <span>101-200 &gt;</span>
+      </button>
+    </div>
   </section>
 </template>
+
+<script>
+  import board from "@/components/stats/board.vue";
+
+  export default {
+    components: {
+      board,
+    }
+  }
+</script>
