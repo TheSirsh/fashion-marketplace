@@ -1,12 +1,16 @@
 <template>
   <section>
-    
+    <who/>
   </section>
 </template>
 
 <script>
-  export default {
+  import who from './who.vue';
 
+  export default {
+    components: {
+      who,
+    },
   }
 </script>
 
