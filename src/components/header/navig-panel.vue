@@ -9,7 +9,7 @@
       <ul class="submenu" v-bind:class="{active: isActive}">
         <router-link to="/stats">Stats</router-link>
         <li>Shows</li>
-        <li>About Us</li>
+        <router-link to="/about">About Us</router-link>
         <li>Community</li>
         <li>Creator studio</li>
         <li>Edit Profile</li>

@@ -21,7 +21,12 @@ const routes = [
     path: "/stats",
     name: "stats",
     component: () => import("@/views/stats.vue"),
-  }
+  },
+  {
+    path: "/about",
+    about: "about",
+    component: () => import("@/views/about.vue"),
+  },
 ]
 
 const router = createRouter({
