@@ -3,6 +3,7 @@
     <who/>
     <what/>
     <when/>
+    <makers/>
   </section>
 </template>
 
@@ -10,10 +11,11 @@
   import who from './who.vue';
   import what from './what.vue';
   import when from './when.vue';
+  import makers from './makers/makers.vue';
 
   export default {
     components: {
-      who, what, when,
+      who, what, when, makers,
     },
   }
 </script>
