@@ -10,7 +10,7 @@
         <router-link to="/stats">Stats</router-link>
         <li>Shows</li>
         <router-link to="/about">About Us</router-link>
-        <li>Community</li>
+        <router-link to="/community">Community</router-link>
         <li>Creator studio</li>
         <li>Edit Profile</li>
         <li>Settings</li>
@@ -66,6 +66,7 @@ import router from '@/router/index';
 
   .submenu {
     position: absolute;
+    display: flex;
     justify-content: space-around;
     flex-direction: column;
     top: 100%;

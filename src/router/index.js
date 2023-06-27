@@ -27,6 +27,11 @@ const routes = [
     about: "about",
     component: () => import("@/views/about.vue"),
   },
+  {
+    path: "/community",
+    about: "community",
+    component: () => import("@/views/community.vue"),
+  },
 ]
 
 const router = createRouter({
