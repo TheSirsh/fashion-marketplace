@@ -20,3 +20,10 @@
   }
 </script>
 
+<style scoped>
+  section {
+    width: calc(100vw / 1.23);
+    margin: calc(100vw / 9.17) auto calc(100vw / 8) auto;
+  }
+</style>
+
