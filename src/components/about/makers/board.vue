@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div v-for="maker in makers">
+  <div class="main-container">
+    <div v-for="maker in makers" class="card-container">
       <img :src="setImage(maker.src)" :alt="maker.alt">
       <p>{{ maker.name }}</p>
       <div>
@@ -31,3 +31,48 @@
     }
   }
 </script>
+
+<style scoped>
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(100vw / 1.46);
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw / 4.53);
+    height: calc(100vw / 3.19);
+  }
+
+  img {
+    width: 100%;
+    height: calc(100vw / 4);
+    border-radius: calc(100vw / 288);
+  }
+
+  p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: calc(100vw / 72) auto calc(100vw / 144) auto;
+  }
+
+  .card-container > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: calc(100vw / 11.43);
+    height: calc(100vw / 40);
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0px auto;
+    border-radius: calc(100vw / 9.6);
+  }
+
+  span {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+</style>

@@ -15,3 +15,28 @@
     }
   }
 </script>
+
+<style scoped>
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100vw / 1.42);
+    height: calc(100vw / 1.12);
+    margin: calc(100vw / 9.6) auto calc(100vw / 8) auto;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0px auto;
+  }
+
+  p {
+    width: calc(100vw / 2.33);
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.5;
+    margin: calc(100vw / 72) auto calc(100vw / 24) auto;
+  }
+</style>
