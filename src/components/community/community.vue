@@ -1,11 +1,15 @@
 <template>
-  <section>
-    
-  </section>
+  <div>
+    <feeds/>
+  </div>
 </template>
 
 <script>
-  export default {
+  import feeds from './feeds/feeds.vue';
 
+  export default {
+    components: {
+      feeds,
+    }
   }
 </script>
