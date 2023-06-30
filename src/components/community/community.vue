@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="community">
     <feeds/>
     <right/>
   </div>
@@ -14,3 +14,13 @@
     }
   }
 </script>
+
+<style scoped>
+  .community {
+    width: 87.5%;
+    height: calc(100vw / 1.49);
+    display: flex;
+    justify-content: space-between;
+    margin: calc(100vw / 18) calc(100vw / 24) calc(100vw / 12) calc(100vw / 12);
+  }
+</style>
