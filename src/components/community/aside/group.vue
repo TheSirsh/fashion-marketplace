@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <h4>Suggested Groups</h4>
-    <div v-for="group in groups">
+    <div v-for="group in groups" class="container">
       <div>
         <img :src="setImage(group.imgSrc)" :alt="group.imgAlt">
         <p>{{ group.name }}</p>
@@ -13,7 +13,7 @@
         </button>
       </div>
     </div>
-    <p>See All Groups</p>
+    <p class="link">See All Groups</p>
   </div>
 </template>
 
@@ -55,7 +55,7 @@
     text-align: left;
   }
 
-  .main-container > div {
+  .container {
     display: flex;
     justify-content: space-between;
     width: 89%;
@@ -63,19 +63,19 @@
     margin: calc(100vw / 115.2) auto;
   }
 
-  .main-container > div > div {
+  .container > div {
     display: flex;
     align-items: center;
   }
 
-  .main-container > div > div :first-child {
+  .container > div :first-child {
     font-size: 0.6rem;
     font-weight: medium;
     opacity: 0.5;
     margin-right: calc(100vw / 144);
   }
 
-  .main-container > div > div :last-child {
+  .container > div :last-child {
     margin: 0;
     font-family: "Poppins";
     font-size: 0.7rem;
@@ -106,7 +106,7 @@
     color: #ffffff;
   }
   
-  p {
+  .link {
     margin: calc(100vw / 78) calc(100vw / 72) 0px 0px;
     text-align: right;
     font-size: 0.8rem;
