@@ -11,7 +11,7 @@
         <li>Shows</li>
         <router-link to="/about">About Us</router-link>
         <router-link to="/community">Community</router-link>
-        <li>Creator studio</li>
+        <router-link to="/creator-studio">Creator-studio</router-link>
         <li>Edit Profile</li>
         <li>Settings</li>
       </ul>

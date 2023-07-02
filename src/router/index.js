@@ -32,6 +32,11 @@ const routes = [
     about: "community",
     component: () => import("@/views/community.vue"),
   },
+  {
+    path: "/creator-studio",
+    about: "creator-studio",
+    component: () => import("@/views/creator-studio.vue")
+  }
 ]
 
 const router = createRouter({
