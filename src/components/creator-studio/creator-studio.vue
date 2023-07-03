@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import descr from "@/components/creator-studio/descr.vue";
+  import descr from "@/components/creator-studio/descr/descr.vue";
   import board from "@/components/creator-studio/board.vue";
 
   export default {
