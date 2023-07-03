@@ -3,6 +3,7 @@
     <become/>
     <customize/>
     <explore/>
+    <create/>
   </section>
 </template>
 
@@ -10,10 +11,11 @@
   import become from './become.vue';
   import customize from './customize.vue';
   import explore from './explore.vue';
+  import create from './create.vue';
 
   export default {
     components: {
-      become, customize, explore,
+      become, customize, explore, create,
     }
   }
 </script>
