@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="main-container">
     <become/>
     <customize/>
     <explore/>
@@ -19,3 +19,14 @@
     }
   }
 </script>
+
+<style scoped>
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 84%;
+    height: calc(100vw / 0.58);
+    margin: calc(100vw / 11.08) auto calc(100vw / 7.2) auto;
+  }
+</style>
