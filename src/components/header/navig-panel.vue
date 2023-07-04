@@ -12,7 +12,8 @@
         <router-link to="/about">About Us</router-link>
         <router-link to="/community">Community</router-link>
         <router-link to="/creator-studio">Creator-studio</router-link>
-        <li>Edit Profile</li>
+        <router-link to="/edit-profile">Edit Profile</router-link>
+        <li></li>
         <li>Settings</li>
       </ul>
     </li>

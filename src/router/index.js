@@ -35,7 +35,12 @@ const routes = [
   {
     path: "/creator-studio",
     about: "creator-studio",
-    component: () => import("@/views/creator-studio.vue")
+    component: () => import("@/views/creator-studio.vue"),
+  },
+  {
+    path: "/edit-profile",
+    about: "edit-profile",
+    component: () => import("@/views/edit-profile.vue"),
   }
 ]
 
