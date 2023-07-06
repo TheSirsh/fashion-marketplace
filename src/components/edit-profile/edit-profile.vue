@@ -1,15 +1,17 @@
 <template>
   <section class="main-section">
     <banner/>
+    <content/>
   </section>
 </template>
 
 <script>
   import banner from './banner.vue';
+  import content from "./content/content.vue";
 
   export default {
     components: {
-      banner, 
+      banner, content,
     }
   }
 </script>
