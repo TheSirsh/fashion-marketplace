@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import asde from './aside.vue';
+  import asde from './aside/aside.vue';
   import feeds from './feeds.vue';
 
   export default {
