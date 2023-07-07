@@ -17,3 +17,15 @@
     }
   }
 </script>
+
+<style scoped>
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 33.14%;
+    margin: 0;
+  }
+
+</style>
