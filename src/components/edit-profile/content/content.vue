@@ -21,7 +21,7 @@
 .content-container {
   display: flex;
   justify-content: space-between;
-  width: 72.29%;
+  width: 100%;
   margin: calc(100vw / 8) auto calc(100vw / 11.08);
 }
 </style>
