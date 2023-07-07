@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="content-container">
     <asde/>
     <feeds/>
   </section>
@@ -15,3 +15,13 @@
     }
   }
 </script>
+
+<style scoped>
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  width: 72.29%;
+  margin: calc(100vw / 8) auto calc(100vw / 11.08);
+}
+</style>
