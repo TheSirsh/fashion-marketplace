@@ -13,20 +13,10 @@
       <p>{{ feed.descr }}</p>
       <img :src="setImage(feed.pictSrc)" :alt="feed.pictAlt">
       <div>
-        <div>
-          <img :src="setImage(feed.likeSrc)" :alt="feed.likeAlt">
-          <p>{{ feed.likeText }}</p>
-          <p>{{ feed.likeText2 }}</p>
-        </div>
-        <div>
-          <img :src="setImage(feed.commSrc)" :alt="feed.commAlt">
-          <p>{{ feed.commText }}</p>
-          <p>{{ feed.commText2 }}</p>
-        </div>
-        <div>
-          <img :src="setImage(feed.shareSrc)" :alt="feed.shareAlt">
-          <p>{{ feed.shareText }}</p>
-          <p>{{ feed.shareText2 }}</p>
+        <div v-for="inter in inters">
+          <img :src="setImage(inter.pictSrc)" :alt="inter.pictAlt">
+          <p>{{ inter.text }}</p>
+          <p>{{ inter.text2 }}</p>
         </div>
       </div>
 
@@ -40,14 +30,20 @@
     data() {
       return {
         feeds: [
-          { avaSrc: "", avaAlt: "", name: "", time: "", nick: "", descr: "", pictSrc: "", pictAlt: "", likeSrc: "", likeAlt: "", likeText: "", likeText2: "", commSrc: "", commAlt: "", commText: "", commText2: "", shareSrc: "", shareAlt: "", shareText: "", shareText2: "", },
+          { avaSrc: "jpg/ava1.jpg", avaAlt: "1", name: "Farhan Khan", time: "4m", nick: "@farhan", descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", pictSrc: "jpg/bg1.jpg", pictAlt: "1", },
+          { avaSrc: "jpg/ava2.jpg", avaAlt: "2", name: "Farhan Khan", time: "2d", nick: "@farhan", descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", pictSrc: "jpg/bg2.jpg", pictAlt: "2", },
         ],
+        inters : [
+          { pictSrc: "svg/like.svg",  pictAlt: "Like", text: "Liked", text2: "You and 12k others.", },
+          { pictSrc: "svg/comment.svg",  pictAlt: "Comment", text: "Comment", text2: "12 Comments", },
+          { pictSrc: "svg/share.svg",  pictAlt: "Share", text: "Share", text2: "3 Shares", },
+        ]
       }
     },
     methods: {
       setImage(src) {
-        return require(`@/assets/jpg/${src}.jpg`)
-      }
-    }
+        return require(`@/assets/${src}`)
+      },
+    },
   }
 </script>
