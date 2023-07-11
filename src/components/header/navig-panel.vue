@@ -8,7 +8,7 @@
     >More
       <ul class="submenu" v-bind:class="{active: isActive}">
         <router-link to="/stats">Stats</router-link>
-        <li>Shows</li>
+        <router-link to="/shows">Shows</router-link>
         <router-link to="/about">About Us</router-link>
         <router-link to="/community">Community</router-link>
         <router-link to="/creator-studio">Creator-studio</router-link>
