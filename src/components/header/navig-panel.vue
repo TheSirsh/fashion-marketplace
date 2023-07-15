@@ -1,11 +1,12 @@
 <template>
   <nav>
     <router-link to="/" @click="deactivateSubMenu()">Home</router-link>
-    <router-link to="/explore" @click="deactivateSubMenu()">Explore</router-link>
+    <router-link to="/explore" @click="deactivateSubMenu()">Explore </router-link>
     <li>Personal Collection</li>
     <router-link to="/drops" @click="deactivateSubMenu()">Drops</router-link>
     <li class="down" @click="activateSubMenu()"
     >More
+      <span class="arrow" v-bind:class="{up: isUp}"></span>
       <ul class="submenu" v-bind:class="{active: isActive}">
         <router-link to="/stats">Stats</router-link>
         <router-link to="/shows">Shows</router-link>
@@ -13,7 +14,6 @@
         <router-link to="/community">Community</router-link>
         <router-link to="/creator-studio">Creator-studio</router-link>
         <router-link to="/edit-profile">Edit Profile</router-link>
-        <li></li>
         <li>Settings</li>
       </ul>
     </li>
@@ -25,7 +25,8 @@ import router from '@/router/index';
   export default {
     data() {
       return {
-        isActive: false
+        isUp: false,
+        isActive: false,
       }
     },
     components: {
@@ -34,9 +35,11 @@ import router from '@/router/index';
     methods: {
       activateSubMenu() {
         this.isActive = !this.isActive;
+        this.isUp = !this.isUp;
       },
       deactivateSubMenu() {
         this.isActive = false;
+        this.isUp = false;
       }
     },
   }
@@ -46,19 +49,43 @@ import router from '@/router/index';
   nav {
     display: flex;
     justify-content: space-between;
-    width: calc(100vw / 2.87);
+    width: 35.82%;
   }
 
   li {
     list-style: none;
   }
 
+  a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
   .down {
-    position: relative;    
+    position: relative;
+    display: flex;
+    align-items: center;
   }
 
   .down:hover {
     cursor: pointer;
+  }
+
+  .arrow {
+    width: calc(100vw / 240);
+    height: calc(100vw / 240);
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    margin-left: calc(100vw / 240);
+    transform: rotate(135deg);
+    transition: 0.5s ease-in-out;
+  }
+
+  .up {
+    transform: rotate(-45deg);
+    transition: 0.5s ease-in-out;
   }
 
   .active {
@@ -72,7 +99,7 @@ import router from '@/router/index';
     flex-direction: column;
     top: 100%;
     left: 0;
-    width: calc(100vw / 7.61);
+    width: 370.59%;
     height: calc(100vw / 5.35);
     background-color: #212749;
     z-index: 10;
@@ -80,6 +107,15 @@ import router from '@/router/index';
     transform: scaleY(0);
     transform-origin: 0 0;
     padding: 0;
+  }
+
+  .submenu > a {
+    text-align: left;
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin: 0px calc(100vw / 96);
+    padding: calc(100vw / 144) 0px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
   }
 
   .submenu > li {

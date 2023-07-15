@@ -1,16 +1,16 @@
 <template>
   <ul>
-    <li>
-      <img src="@/assets/svg/bell.svg" alt="" class="svg">
+    <li class="svg">
+      <img src="@/assets/svg/bell.svg" alt="">
     </li>
-    <li>
-      <img src="@/assets/svg/quote.svg" alt="" class="svg">
+    <li class="svg">
+      <img src="@/assets/svg/quote.svg" alt="">
     </li>
     <li class="wallet">
       <span>Wallet</span>
     </li>
-    <li>
-      <img src="@/assets/jpg/avatar.jpg" alt="" class="jpg">
+    <li class="jpg">
+      <img src="@/assets/jpg/avatar.jpg" alt="">
     </li>
   </ul>
 </template>
@@ -26,7 +26,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100vw / 5.37);
+    width: 19.14%;
+    padding: 0;
   } 
 
   li {
@@ -34,18 +35,27 @@
   }
 
   .wallet {
-    width: calc(100vw / 13.33);
+    width: 40.3%;
     height: calc(100vw / 37.89);
     border: 0.5px solid #ffffff;
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-sizing: border-box;
   }
 
   .jpg {
+    width: 16.42%;
+    height: auto;
+  }
+
+  .jpg > img {
     border-radius: 50%;
-    width: calc(100vw / 32.73);
-    height: calc(100vw / 32.73);
+  }
+
+  .svg {
+    width: 7.46%;
+    height: auto;
   }
 </style>

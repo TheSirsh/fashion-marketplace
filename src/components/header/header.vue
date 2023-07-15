@@ -47,5 +47,6 @@
     font-weight: 700;
     font-size: 1.8rem;
     color: #6C5DD3;
+    width: 5.79%;
   }
 </style>
