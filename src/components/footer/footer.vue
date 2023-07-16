@@ -33,7 +33,9 @@
         </li>
       </ul>
       <div class="social-container">
-        <img v-for="social in socials" :src="setImage(social.src)" :alt="social.alt">
+        <a :href="social.link" v-for="social in socials">
+          <img :src="setImage(social.src)" :alt="social.alt">
+        </a>
       </div>
     </div>
   </footer>
@@ -60,9 +62,9 @@
           { text: "adorableprogrammer@gmail.com", },
         ],
         socials: [
-          { src: "youtube", alt: "YouTube", },
-          { src: "discord", alt: "Discord", },
-          { src: "instagram", alt: "Instagram", },
+          { link : "https://www.youtube.com/", src: "youtube", alt: "YouTube", },
+          { link : "https://discord.com/", src: "discord", alt: "Discord", },
+          { link : "https://www.instagram.com/", src: "instagram", alt: "Instagram", },
         ],
       }
     },
@@ -83,6 +85,10 @@
     margin: calc(100vw / 11.08) auto calc(100vw / 28.5) auto;
   }
 
+  footer > div {
+    max-width: 24%;
+  }
+
   h2 {
     margin: 0;
     padding: 0;
@@ -101,7 +107,6 @@
   ul {
     margin: 0;
     padding: 0;
-    max-width: calc(100vw / 5);
   }
 
   li {
@@ -111,18 +116,35 @@
     opacity: 0.5;
     text-align: left;
     margin: calc(100vw / 72) 0px;
+    line-height: 1.25rem;
+  }
+
+  li:hover {
+    cursor: default;
+    opacity: 1;
+    transition: 0.5s ease-in-out
   }
 
   .social-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100vw / 9.29);
+    width: 58.71%;
     height: calc(100vw / 57.6);
   }
 
+  a {
+    width: 16.13%;
+  }
+
+  a:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transition: 0.5s ease-in-out
+  }
+
   img {
-    width: calc(100vw / 57.6);
-    height: calc(100vw / 57.6);
+    width: 100%;
+    height: 100%;
   }
 </style>
