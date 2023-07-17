@@ -15,6 +15,7 @@
 
 <style scoped>
   section {
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -47,8 +48,8 @@
   }
 
   button {
-    width: calc(100vw / 7.16);
-    height: calc(100vw / 26.18);
+    width: 16.76%;
+    height: 100%;
     background-color: #493e52;
     font-family: "SF Pro Display";
     font-size: 0.94rem;
