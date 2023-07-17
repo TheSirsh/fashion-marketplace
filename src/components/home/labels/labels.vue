@@ -22,7 +22,8 @@ export default {
     flex-direction: column;
     margin: calc(100vw / 12) auto;
     width: 78.42%;
-    height: calc(100vw / 4.74)
+    height: calc(100vw / 4.74);
+    padding-left: 8.33%;
   }
 
   h2 {
@@ -33,6 +34,7 @@ export default {
   }
 
   p {
+    font-size: 1rem;
     margin: calc(100vw / 144) auto;
     font-weight: 500;
     opacity: 0.5;
