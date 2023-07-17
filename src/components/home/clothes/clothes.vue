@@ -18,6 +18,7 @@
 
 <style scoped>
   section {
+    width: 100%;
     height: calc(100vw / 2.79);
     margin: calc(100vw / 80) auto;
     display: flex;

@@ -30,15 +30,15 @@
 <style scoped>
   div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     flex-wrap: wrap;
-    width: calc(100vw / 2.44);
+    width: 49.25%;
     height: calc(100vw / 2.79);
   }
 
   img {
-    width: calc(100vw / 7.7);
+    width: 31.64%;
     border-radius: calc(100vw / 144);
   }
 </style>

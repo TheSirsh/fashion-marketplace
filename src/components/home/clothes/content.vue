@@ -35,7 +35,7 @@
 
 <style scoped>
   .main-container {
-    width: calc(100vw / 2.74);
+    width: 44.67%;
     height: calc(100vw / 3.08);
   }
 
@@ -48,13 +48,15 @@
 
   .main-text {
     margin: 0px;
+    font-size: 1rem;
     font-weight: 500;
+    line-height: 180%;
     text-align: left;
     opacity: 0.5;
   }
 
   .buttons {
-    width: calc(100vw / 4.97);
+    width: 54.1%;
     height: calc(100vw / 28.8);
     display: flex;
     justify-content: space-between;
@@ -67,6 +69,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
     border: none;
     border-radius: calc(100vw / 144);
   }
@@ -77,14 +80,16 @@
   }
 
   .buttons_left {
-    width: calc(100vw / 8.94);
+    width: 55.52%;
   }
 
   .buttons_right {
-    width: calc(100vw / 13.21);
+    width: 37.59%;
   }
 
   span {
+    font-size: 1rem;
+    font-weight: 500;
     color: #ffffff;
   }
 
@@ -110,6 +115,7 @@
   }
 
   .text-container_text {
+    font-size: 1rem;
     font-weight: 500;
     margin: 0;
     padding: 0;
