@@ -1,20 +1,28 @@
 <template>
+  <loader v-if="isLoading"/>
   <headr/>
   <router-view/>
   <footr/>
 </template>
 
 <script>
+  import loader from "@/components/loader/loader.vue";
   import headr from "@/components/header/header.vue";
   import footr from "@/components/footer/footer.vue";
   import router from "./router";
 
   export default {
+    data() {
+      return {
+        isLoading: true,
+      }
+    },
+    mounted() {
+      this.isLoading = false;
+    },
     components: {
-    headr,
-    footr,
-    router
-},
+      loader, headr, footr, router,
+    },
   }
 </script>
 
