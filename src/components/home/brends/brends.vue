@@ -31,4 +31,9 @@
     width: 82.87%;
     height: calc(100vw / 13.98);
   }
+
+  img {
+    width: auto;
+    height: 100%;
+  }
 </style>

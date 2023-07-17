@@ -31,8 +31,11 @@
   }
 
   p {
-    width: calc(100vw / 3.4);
+    font-size: 1rem;
+    font-weight: 500;
+    width: 35%;
     margin: calc(100vw / 144) auto;
+    line-height: 1.5rem;
     text-align: center;
     font-family: Poppins;
     color: #888888;
