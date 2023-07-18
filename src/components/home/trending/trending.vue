@@ -18,6 +18,7 @@
 
 <style scoped>
   section {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,7 +35,8 @@
 
   p {
     margin: calc(100vw / 144) auto calc(100vw / 48) auto;
-    width: calc(100vw / 3.4);
+    width: 33%;
+    font-size: 1rem;
     font-weight: 500;
     opacity: 0.5;
   }
