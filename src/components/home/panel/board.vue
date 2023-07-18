@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div class="board-container">
     
     <div class="container" v-for="item in items">
       <img :src="setImage(item.pictSrc)" :alt="item.pictAlt" class="pict">
@@ -12,11 +12,12 @@
         <span>{{ item.bid }}</span>
       </div>
       <div class="bottom-text">
-        <button class="button-like">
-          <img :src="setImage(item.buttonSrc)" :alt="item.buttonAlt" class="img-like">
+        <button class="button-like" v-on:click="item.isLike = !item.isLike">
+          <img v-if="item.isLike == true" src="@/assets/svg/panel-heart.svg" alt="Like" class="img-like">
+          <img v-else src="@/assets/svg/notLike.svg" alt="Like" class="img-like">
         </button>
         <button class="button-buy">
-          <span>{{ item.buttonSpan }}</span>
+          <span>Buy Now</span>
         </button>
       </div>
     </div>
@@ -29,15 +30,15 @@
     data() {
       return {
         items: [
-          { pictSrc: "jpg/panel-img1.jpg", pictAlt: "1", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
-          { pictSrc: "jpg/panel-img2.jpg", pictAlt: "2", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
-          { pictSrc: "jpg/panel-img3.jpg", pictAlt: "3", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
-          { pictSrc: "jpg/panel-img4.jpg", pictAlt: "4", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
-          { pictSrc: "jpg/panel-img5.jpg", pictAlt: "5", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
-          { pictSrc: "jpg/panel-img6.jpg", pictAlt: "6", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
-          { pictSrc: "jpg/panel-img7.jpg", pictAlt: "7", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
-          { pictSrc: "jpg/panel-img8.jpg", pictAlt: "8", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
-          { pictSrc: "jpg/panel-img9.jpg", pictAlt: "9", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", buttonSrc: "svg/panel-heart.svg", buttonAlt: "Like", buttonSpan: "Buy Now", },
+          { pictSrc: "jpg/panel-img1.jpg", pictAlt: "1", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", isLike: false, },
+          { pictSrc: "jpg/panel-img2.jpg", pictAlt: "2", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", isLike: false, },
+          { pictSrc: "jpg/panel-img3.jpg", pictAlt: "3", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", isLike: false, },
+          { pictSrc: "jpg/panel-img4.jpg", pictAlt: "4", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", isLike: false, },
+          { pictSrc: "jpg/panel-img5.jpg", pictAlt: "5", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", isLike: false, },
+          { pictSrc: "jpg/panel-img6.jpg", pictAlt: "6", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", isLike: false, },
+          { pictSrc: "jpg/panel-img7.jpg", pictAlt: "7", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", isLike: false, },
+          { pictSrc: "jpg/panel-img8.jpg", pictAlt: "8", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", isLike: false, },
+          { pictSrc: "jpg/panel-img9.jpg", pictAlt: "9", sellerName: "@Johny", bidText: "Current Bid", text: "Lorem Ipsum", bid: "0.005 ETH", isLike: false, },
         ],
       }
     },
@@ -50,7 +51,7 @@
 </script>
 
 <style scoped>
-  .main-container {
+  .board-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: calc(100vw / 96);
@@ -64,25 +65,30 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: calc(100vw / 3.7);
     height: calc(100vw / 2.42);
     background-color: rgba(255, 255, 255, 0.1);
     font-family: "Popins";
     border-radius: calc(100vw / 72);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
   }
 
   .pict {
-    width: calc(100vw / 4.27);
-    height: calc(100vw / 3.79);
+    width: 86.63%;
+    height: auto;
     border-radius: calc(100vw / 144);
     margin-top: calc(100vw / 55.38);
+  }
+
+  .pict:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
   }
 
   .upper-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100vw / 4.27);
+    width: 86.63%;
     opacity: 0.5;
     font-weight: 500;
   }
@@ -95,7 +101,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100vw / 4.27);
+    width: 86.63%;
     font-family: "Poppins";
     font-weight: 700;
   }
@@ -104,7 +110,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100vw / 4.27);
+    width: 86.63%;
     margin-bottom: calc(100vw / 57.6);
   }
 
@@ -112,7 +118,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: calc(100vw / 53.33);
+    width: 8%;
     height: calc(100vw / 60);
     background: none;
     border: none;
@@ -120,6 +126,7 @@
   }
 
   .img-like {
+    cursor: pointer;
     width: 100%;
     height: 100%;
   }
@@ -128,14 +135,24 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: calc(100vw / 4.95);
+    width: 86.09%;
     height: calc(100vw / 28.8);
     background: linear-gradient(to top right, #671ae4, #b75cff);
     border: none;
     border-radius: calc(100vw / 144);
   }
 
-  span {
+  .button-buy:hover {
+    cursor: pointer;
+  }
+
+  .button-buy:hover > span {
+    font-size: 1.5rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  .button-buy > span {
+    font-size: 1rem;
     font-weight: 600;
     color: #ffffff;
   }

@@ -44,7 +44,13 @@
     border-radius: calc(100vw / 144);
   }
 
+  li:hover {
+    cursor: pointer;
+    background: linear-gradient(to top right, #671ae4, #b75cff);
+  }
+
   span {
+    font-size: 1rem;
     font-weight: 500;
   }
 </style>
