@@ -18,6 +18,7 @@
 
 <style scoped>
   section {
+    width: 100%;
     height: calc(100vw / 2.10);
     margin: calc(100vw / 12) auto;
   }
@@ -30,7 +31,8 @@
 
   p {
     margin: calc(100vw / 144) auto calc(100vw / 48) auto;
-    width: calc(100vw / 3.4);
+    width: 35.25%;
+    font-size: 1rem;
     font-weight: 500;
     opacity: 0.5;
   }
