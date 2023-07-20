@@ -18,21 +18,23 @@
 
 <style scoped>
   section {
+    width: 100%;
     height: calc(100vw / 2.98);
     margin: calc(100vw / 12) auto calc(100vw / 96) auto;
   }
 
   h2 {
-    width: calc(100vw / 3.72);
+    width: 32.25%;
     font-size: 2rem;
     font-weight: 700;
     margin: 0px auto;
   }
 
   p {
-    width: calc(100vw / 5.98);
+    width: 20.08%;
     margin: calc(100vw / 144) auto calc(100vw / 28.8) auto;
     font-weight: 500;
+    font-size: 1rem;
     opacity: 0.5;
   }
 </style>
