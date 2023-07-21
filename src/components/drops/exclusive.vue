@@ -20,8 +20,9 @@
 
   p {
     margin: calc(100vw / 36) auto calc(100vw / 12) auto;
-    width: calc(100vw / 2.33);
+    width: 51.42%;
     font-size: 1rem;
+    line-height: 180%;
     font-weight: 500;
     opacity: 0.5;
   }
