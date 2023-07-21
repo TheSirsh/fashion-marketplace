@@ -25,6 +25,7 @@
 
 <style scoped>
   ul {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +39,7 @@
     align-items: center;
     justify-content: space-around;
     list-style: none;
-    width: calc(100vw / 7.66);
+    width: 15.58%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: calc(100vw / 144);
@@ -47,11 +48,17 @@
   li:hover {
     cursor: pointer;
     background: linear-gradient(to top right, #671ae4, #b75cff);
+    transition: 0.5s ease-in-out;
   }
 
   span {
     font-family: "Poppins";
     font-size: 1rem;
     font-weight: 500;
+  }
+
+  li:hover > span {
+    font-size: 1.2rem;
+    transition: 0.5s ease-in-out;
   }
 </style>

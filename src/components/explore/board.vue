@@ -6,8 +6,8 @@
         <img :src="setImage(item.fotoSrc)" :alt="item.fotoAlt" class="item-foto">
         <h3>{{ item.h3 }}</h3>
         <p>{{ item.p }}</p>
+        <img :src="setImage(item.svgSrc)" :alt="item.svgAlt" class="svg">
       </div>
-      <img :src="setImage(item.svgSrc)" :alt="item.svgAlt" class="svg">
     </div>
   </div>
 </template>
@@ -50,10 +50,17 @@
   }
   .card-container {
     position: relative;
-    width: calc(100vw / 3.70);
-    height: 100%;
+    height: calc(100vw / 2.74);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: calc(100vw / 144);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+  }
+
+  .card-container:hover {
+    transform: scale(1.05);
+    border: 1px solid #ffffff;
+    transition: 0.5s ease-in-out;
   }
 
   .item-bg {
@@ -63,13 +70,19 @@
   }
 
   .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
+    width: 75.84%;
+    margin: 0px auto;
     top: calc(100vw / -26.67);
   }
 
   .item-foto {
     width: calc(100vw / 14.55);
     height: calc(100vw / 14.55);
+    margin: 0px auto;
     border-radius: 50%;
   }
 
@@ -80,6 +93,7 @@
 
   p {
     width: calc(100vw / 4.69);
+    line-height: 1.5rem;
     font-size: 0.75rem;
     margin: 0px auto;
     opacity: 0.5;
@@ -96,6 +110,9 @@
   }
 
   .svg {
+    margin-top: calc(100vw / 144);
+    margin-left: -5.3%;
+    align-items: flex-start;
     width: calc(100vw / 130.91);
     height: calc(100vw / 72);
   }
