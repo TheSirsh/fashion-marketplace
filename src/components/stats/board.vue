@@ -18,7 +18,7 @@
         </div>
       </td>
       <td>
-        <img src="@/assets/svg/etherium.svg" alt="Etherium">
+        <img src="@/assets/svg/etherium.svg" alt="Etherium" class="etherium">
         {{ stat.volume }}
       </td>
       <td class="green">{{ stat.day }}</td>
@@ -59,14 +59,14 @@
 
 <style scoped>
   table {
-    width: calc(100vw / 1.14);
+    width: 100%;
     height: calc(100vw / 1.6);
-    font-size: 0.9rem;
     border-collapse: collapse;
     margin: calc(100vw / 14.4) auto calc(100vw / 28.8) auto;
   }
 
   th {
+    font-size: 0.9rem;
     font-weight: 600;
     border-bottom: 0.5px solid #ffffff;
     margin: 0;
@@ -113,7 +113,12 @@
   }
 
   .data {
+    font-size: 0.8rem;
     height: calc(100vw / 12);
+  }
+
+  .data:hover {
+    background: rgba(255, 255, 255, 0.1);
   }
 
   .etherium {
