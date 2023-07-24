@@ -59,7 +59,7 @@
     font-size: 1.5rem;
     font-weight: 800;
     text-align: left;
-    margin: 0px;
+    margin: 0px 0px calc(100vw / 90) 0px;
   }
 
   section > div {
@@ -69,20 +69,27 @@
   }
 
   .live-container {
-    width: calc(100vw / 5.39);
+    width: 21.9%;
+  }
+
+  .live-container:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
   }
 
   .live-container > p {
+    margin: 0;
     font-size: 0.7rem;
     font-weight: 500;
     opacity: 0.8;
     text-align: right;
+    letter-spacing: 2%;
   }
 
   .img-container {
     width: 100%;
     position: relative;
-    margin: calc(100vw / 90) 0px calc(100vw / 96) 0px;
+    margin: calc(100vw / 288) 0px calc(100vw / 96) 0px;
   }
 
   .img-container > img {
@@ -96,9 +103,9 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: calc(100vw / 144);
-    right: calc(100vw / 144);
-    width: calc(100vw / 23.61);
+    top: 4.05%;
+    right: 3.75%;
+    width: 22.85%;
     height: calc(100vw / 68.57);
     border-radius: calc(100vw / 17.78);
     background-color: #e20000;
@@ -106,11 +113,11 @@
 
   .live > span {
     font-size: 0.675rem;
-    margin-right: calc(100vw / 192);
+    margin-right: 12.3%;
   }
 
   .live > img {
-    width: calc(100vw / 240);
+    width: 9.84%;
     height: auto;
   }
 
@@ -119,9 +126,9 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: calc(100vw / 38.92);
-    right: calc(100vw / 144);
-    width: calc(100vw / 23.61);
+    top: 14.97%;
+    right: 3.75%;
+    width: 22.85%;
     height: calc(100vw / 68.57);
     border-radius: calc(100vw / 17.78);
     background: linear-gradient(to top right, #671ae4, #b75cff);
@@ -132,15 +139,16 @@
   }
 
   .number > img {
-    width: calc(100vw / 130.91);
+    width: 18.03%;
     height: auto;
-    margin-right: calc(100vw / 192);
+    margin-right: 12.3%;
   }
 
   .brand-container {
     display: flex;
     justify-content: space-between;
-    width: calc(100vw / 6.43);
+    align-items: center;
+    width: 83.9%;
     height: calc(100vw / 53.33);
   }
 
@@ -151,7 +159,7 @@
   }
 
   .brand-container :nth-child(2) {
-    width: calc(100vw / 48);
+    width: 13.39%;
     height: auto;
     border-radius: 50%;
   }
@@ -162,7 +170,7 @@
   }
 
   .brand-container :nth-child(4) {
-    width: calc(100vw / 80);
+    width: 8.04%;
     height: auto;
   }
   
