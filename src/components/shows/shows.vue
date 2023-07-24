@@ -1,12 +1,14 @@
 <template>
   <section class="main-container">
     <div>
+      <hr class="line1">
       <button>
         <span>Established Brands</span>
       </button>
       <button>
         <span>Creators Brands</span>
       </button>
+      <hr class="line2">
     </div>
     <h2>Fashion Shows</h2>
     <live/>
@@ -37,12 +39,37 @@
   }
 
   .main-container > div {
-    width: 52.42%;
+    position: relative;
+    width: 81.39%;
     height: calc(100vw / 26.46);
     margin: 0px auto calc(100vw / 11.06) auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
+
+  .line1 {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    border: none;
+    border-top: 0.5px solid #ffffff;
+    opacity: 0.2;
+    z-index: -2;
+  }
+  
+  .line2 {
+    margin: 0px;
+    position: absolute;
+    height: 1px;
+    top: 50%;
+    left: 33.5%;
+    width: 33%;
+    border: none;
+    border-top: 1px solid #6c5965;
+    z-index: -1;
+  }
+
 
   button {
     display: flex;
@@ -53,9 +80,18 @@
     border: none;
     border-radius: calc(100vw / 6.97);
     background-color: #493e52;
+    margin: 0px 2%;
+  }
+
+  button > span {
     color: #ffffff;
     font-size: 0.939rem;
     font-weight: 500;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background: linear-gradient(to top right, #671ae4, #b75cff);
   }
 
   h2 {
