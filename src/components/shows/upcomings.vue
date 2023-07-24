@@ -2,7 +2,7 @@
   <section>
     <h3>Upcoming Shows</h3>
     <div>
-      <div v-for="upcoming in upcomings"  class="live-container">
+      <div v-for="upcoming in upcomings"  class="upcoming-container">
         <p>{{ upcoming.time }}</p>
         <img :src="setImage(upcoming.bgSrc)" :alt="upcoming.bgAlt">
         <div class="brand-container">
@@ -58,16 +58,16 @@
     justify-content: space-between;
   }
 
-  .live-container {
+  .upcoming-container {
     width: 21.9%;
   }
 
-  .live-container:hover {
+  .upcoming-container:hover {
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
   }
 
-  .live-container > p {
+  .upcoming-container > p {
     margin: 0;
     font-size: 0.7rem;
     font-weight: 500;
@@ -76,7 +76,7 @@
     letter-spacing: 2%;
   }
 
-  .live-container > img {
+  .upcoming-container > img {
     width: 100%;
     height: auto;
     border-radius: calc(100vw / 240);
@@ -110,7 +110,7 @@
 
   .brand-container :nth-child(4) {
     width: 8.04%;
-      height: auto;
+    height: auto;
   }
 
 </style>
