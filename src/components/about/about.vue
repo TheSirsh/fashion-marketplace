@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="main-container">
     <who/>
     <what/>
     <when/>
@@ -21,8 +21,8 @@
 </script>
 
 <style scoped>
-  section {
-    width: calc(100vw / 1.23);
+  .main-container {
+    width: 81.11%;
     margin: calc(100vw / 9.17) auto calc(100vw / 8) auto;
   }
 </style>
