@@ -38,34 +38,36 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    height: calc(100vw / 1.46);
+    height: 76.34%;
   }
 
   .card-container {
     display: flex;
     flex-direction: column;
-    width: calc(100vw / 4.53);
-    height: calc(100vw / 3.19);
+    justify-content: space-between;
+    width: 31.39%;
+    height: 46.03%;
+    border-radius: calc(100vw / 288);
   }
 
   img {
     width: 100%;
-    height: calc(100vw / 4);
+    height: auto;
     border-radius: calc(100vw / 288);
   }
 
   p {
     font-size: 1.1rem;
     font-weight: 600;
-    margin: calc(100vw / 72) auto calc(100vw / 144) auto;
+    margin: 0;
   }
 
   .card-container > div {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: calc(100vw / 11.43);
-    height: calc(100vw / 40);
+    width: 39.62%;
+    height: 7.96%;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0px auto;
     border-radius: calc(100vw / 9.6);
@@ -74,5 +76,22 @@
   span {
     font-size: 0.8rem;
     font-weight: 500;
+  }
+
+  .card-container:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.5s ease-in-out;
+
+  }
+
+  .card-container:hover > p {
+    font-size: 1.2rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  .card-container:hover > div {
+    background-color: #6c5dd3;
+    transition: 0.5s ease-in-out;
   }
 </style>
