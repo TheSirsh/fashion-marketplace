@@ -69,7 +69,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: calc(100vw / 13.09);
+    width: 17.83%;
     height: calc(100vw / 28.8);
     margin: 0px;
     background: linear-gradient(to top right, #671ae4, #b75cff);
@@ -94,14 +94,14 @@
 
   .img-container {
     position: relative;
-    width: calc(100vw / 3.85);
-    height: calc(100vw / 3.22);
+    width: 32.02%;
+    height: 100%;
   }
 
   img {
     position: absolute;
-    width: calc(100vw / 4.44);
-    height: calc(100vw / 3.63);
+    width: 86.63%;
+    height: 88.81%;
     border-radius: calc(100vw / 144);
   }
 
@@ -118,7 +118,6 @@
 
   .img1:hover {
     transform: translateY(-5%) scale(1.1);
-
   }
 
   .img2 {
