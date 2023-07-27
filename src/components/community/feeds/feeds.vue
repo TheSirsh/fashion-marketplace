@@ -118,7 +118,7 @@
   }
 
   .main-container > p {
-    margin: calc(100vw / 57.6) 0px calc(100vw / 90) 0px;
+    margin: 0px;
     text-align: left;
     font-size: 0.8rem;
     font-weight: 500;
@@ -134,8 +134,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3.93% 0px 2.52% 0px;
     width: 100%;
+    height: 3.3%;
   }
 
   .button-container > button {
@@ -143,12 +143,13 @@
     align-items: center;
     background: none;
     border: none;
+    height: 100%;
     color: #ffffff
   }
 
   .button-container > button > img {
-    width: calc(100vw / 72);
-    height: calc(100vw / 72);
+    width: auto;
+    height: 100%;
   }
 
   .button-container > button > span {
@@ -160,29 +161,34 @@
   form {
     display: flex;
     width: 100%;
-    height: calc(100vw / 36);
+    height: 6.13%;
     border-radius: calc(100vw / 9.6);
     background-color: #464b67;
   }
 
   form > img {
-    width: calc(100vw / 48);
-    height: calc(100vw / 48);
-    margin: calc(100vw / 288) calc(100vw / 96) calc(100vw / 288) calc(100vw / 288);
+    width: auto;
+    height: 74.36%;
+    margin: auto 1.94% auto 0.64%;
     border-radius: 50%;
   }
 
-  input {
+  input[type="text"] {
     width: 90.5%;
     background: none;
     border: none;
     height: 80%;
     padding-top: 0.5%;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    outline: none;
   }
 
-  input::placeholder {
+  input[type="text"]::placeholder {
     font-size: 0.7rem;
     font-weight: 400;
     color: #ffffff;
   }
+
 </style>
