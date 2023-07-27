@@ -20,6 +20,6 @@
     width: 87.5%;
     display: flex;
     justify-content: space-between;
-    margin: calc(100vw / 18) calc(100vw / 24) calc(100vw / 12) calc(100vw / 12);
+    margin: calc(100vw / 18) 8.33% calc(100vw / 12) 4.17%;
   }
 </style>

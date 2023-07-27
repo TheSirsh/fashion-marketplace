@@ -31,9 +31,9 @@
     data() {
       return {
         feeds: [
-          { avatSrc: "jpg/feeds-ava1.jpg", avaAlt: "John Wick", nick: "John Wick", email: "@johnywick", time: "4m", descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", imgSrc: "jpg/feeds-jpg1.jpg", imgAlt: "1", imgButtonSrc: "jpg/input.jpg", imgButtonAlt: "", placeholder: "Write a comment", },
-          { avatSrc: "jpg/feeds-ava2.jpg", avaAlt: "Cory Bass", nick: "Cory Bass", email: "@corybass", time: "24m", descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", imgSrc: "jpg/feeds-jpg2.jpg", imgAlt: "2", imgButtonSrc: "jpg/input.jpg", imgButtonAlt: "", placeholder: "Write a comment", },
-          { avatSrc: "jpg/feeds-ava3.jpg", avaAlt: "James", nick: "James", email: "@james", time: "1d", descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", imgSrc: "jpg/feeds-jpg3.jpg", imgAlt: "3", imgButtonSrc: "jpg/input.jpg", imgButtonAlt: "", placeholder: "Write a comment", },
+          { avatSrc: "jpg/feeds-ava1.jpg", avaAlt: "John Wick", nick: "John Wick", email: "@johnywick", time: "4m", descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", imgSrc: "jpg/feeds-jpg1.jpg", imgAlt: "1", imgButtonSrc: "jpg/input.jpg", imgButtonAlt: "", },
+          { avatSrc: "jpg/feeds-ava2.jpg", avaAlt: "Cory Bass", nick: "Cory Bass", email: "@corybass", time: "24m", descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", imgSrc: "jpg/feeds-jpg2.jpg", imgAlt: "2", imgButtonSrc: "jpg/input.jpg", imgButtonAlt: "", },
+          { avatSrc: "jpg/feeds-ava3.jpg", avaAlt: "James", nick: "James", email: "@james", time: "1d", descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", imgSrc: "jpg/feeds-jpg3.jpg", imgAlt: "3", imgButtonSrc: "jpg/input.jpg", imgButtonAlt: "", },
         ],
         buttons: [
           { imgSrc: "svg/like.svg", imgAlt: "Like", span: "Like", },
@@ -51,30 +51,40 @@
 </script>
 
 <style scoped>
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 64.58%;
+    height: calc(100vw / 0.67);
+  }
+
   h2 {
     font-size: 2rem;
     font-weight: 700;
     text-align: left;
-    margin: calc(100vw / 144) 0px calc(100vw / 24) auto;
+    margin: calc(100vw / 144) 0px 0px 0px;
   }
 
   .main-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(100vw / 1.86);
-    height: calc(100vw / 2.26);
-    margin-bottom: calc(100vw / 24);
+    height: 29.78%;
+    width: 93.7%;
+    margin-left: 6.3%;
   }
 
   .author-container {
     display: flex;
+    height: 6.76%;
     margin: 0px;
   }
 
   .author-img {
-    width: calc(100vw / 33.49);
-    height: calc(100vw / 33.49);
+    width: auto;
+    height: 100%;
     border-radius: 50%;
   }
 
@@ -124,7 +134,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: calc(100vw / 57.6) 0px calc(100vw / 72) 0px;
+    margin: 3.93% 0px 2.52% 0px;
     width: 100%;
   }
 
