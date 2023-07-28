@@ -26,32 +26,39 @@
 
 <style scoped>
   aside {
-    width: calc(100vw / 4.19);
+    width: 27.30%;
+    height: calc(100vw / 0.96);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   
   form {
     display: flex;
     align-items: center;
     width: 100%;
-    height: calc(100vw / 30);
+    height: 3.19%;
     border: 0.5px solid rgba(255, 255, 255, 0.5);
     background: none;
     border-radius: calc(100vw / 7.83);
+    margin: 0;
   }
 
   img {
-    width: calc(100vw / 68.57);
-    height: calc(100vw / 68.57);
-    margin-left: calc(100vw / 62.61);
+    width: auto;
+    height: 43.75%;
+    margin-left: 6.69%;
+    margin-right: 4.36%;
   }
 
   input {
     width: 75%;
-    margin-left: calc(100vw / 96);
     background: none;
     border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 400;
   }
 
   input::placeholder {
