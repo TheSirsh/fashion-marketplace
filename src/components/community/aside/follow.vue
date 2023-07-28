@@ -3,7 +3,7 @@
     <h4>Who to follow</h4>
     <div v-for="follow in follows">
       <img :src="setImg(follow.imgSrc)" :alt="follow.imgAlt">
-      <div>
+      <div class="follow-container">
         <span>{{ follow.name }}</span>
         <span>{{ follow.email }}</span>
       </div>
@@ -39,15 +39,17 @@
   .main-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     width: 100%;
-    height: calc(100vw / 3.69);
-    margin: calc(100vw / 96) 0px;
+    height: 25.95%;
+    margin: 0px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: calc(100vw / 336.45);
   }
 
   h4 {
-    margin: calc(100vw / 67.29) auto calc(100vw / 140.21) calc(100vw / 67.29);
+    width: 87.94%;
+    margin: 0px auto;
     font-size: 0.856rem;
     font-weight: 600;
     text-align: left;
@@ -56,9 +58,10 @@
   .main-container > div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 88%;
-    height: calc(100vw / 25.49);
-    margin: calc(100vw / 84.12) auto;
+    height: 14.48%;
+    margin: 0px auto;
   }
 
   img {
@@ -67,20 +70,20 @@
     border-radius: 50%;
   }
 
-  .main-container > div > div {
+  .follow-container {
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-around;
   }
 
-  .main-container > div > div:first-child {
+  .follow-container:first-child {
     font-size: 0.856rem;
     font-weight: 600;
     text-align: left;
   }
 
-  .main-container > div > div :last-child {
+  .follow-container :last-child {
     font-size: 0.685rem;
     font-weight: 400;
     opacity: 0.5;
@@ -91,8 +94,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: calc(100vw / 15.87);
-    height: calc(100vw / 49.48);
+    width: 30%;
+    height: 51.51%;
     background-color: #6c5dd3;
     border: none;
     border-radius: calc(100vw / 9.9);
@@ -105,7 +108,8 @@
   }
   
   p {
-    margin: calc(100vw / 78) calc(100vw / 72) 0px 0px;
+    width: 87.94%;
+    margin: 0px auto;
     text-align: right;
     font-size: 0.8rem;
     font-weight: 600;
