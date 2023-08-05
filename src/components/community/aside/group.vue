@@ -2,12 +2,12 @@
   <div class="main-container">
     <h4>Suggested Groups</h4>
     <div v-for="group in groups" class="container">
-      <div>
+      <div class="left">
         <img :src="setImage(group.imgSrc)" :alt="group.imgAlt">
         <p>{{ group.name }}</p>
       </div>
-      <div>
-        <p>{{ group.numder }}</p>
+      <div class="right">
+        <p class="number">{{ group.numder }}</p>
         <button>
           <span>{{ group.button }}</span>
         </button>
@@ -41,41 +41,52 @@
   .main-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     width: 100%;
     height: calc(100vw / 4.5);
-    margin: calc(100vw / 96) 0px;
+    margin:   0px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: calc(100vw / 336.45);
   }
 
   h4 {
-    margin: calc(100vw / 72) auto calc(100vw / 72) calc(100vw / 72);
+    width: 87.94%;
+    margin: 0px auto;
+    text-align: left;
     font-size: 1rem;
     font-weight: 600;
-    text-align: left;
   }
 
   .container {
     display: flex;
     justify-content: space-between;
     width: 89%;
-    height: calc(100vw / 32.7);
-    margin: calc(100vw / 115.2) auto;
+    height: 13.76%;
+    margin: 0px auto;
   }
 
-  .container > div {
+  .left {
     display: flex;
     align-items: center;
+    width: 39.09%;
+    height: 100%;
   }
 
-  .container > div :first-child {
+  .right {
+    display: flex;
+    align-items: center;
+    width: 44.95%;
+    height: 100%;
+  }
+
+  .number {
     font-size: 0.6rem;
     font-weight: medium;
     opacity: 0.5;
     margin-right: calc(100vw / 144);
   }
 
-  .container > div :last-child {
+  .left > p {
     margin: 0;
     font-family: "Poppins";
     font-size: 0.7rem;
@@ -85,7 +96,7 @@
   img {
     width: auto;
     height: 100%;
-    margin-right: calc(100vw / 180.91);
+    margin-right: 8.33%;
     border-radius: 50%;
   }
 
@@ -93,11 +104,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: calc(100vw / 15.87);
-    height: calc(100vw / 49.48);
-    background-color: #6c5dd3;
+    width: 66.67%;
+    height: 63.59%;
+    background: linear-gradient(to top right, #671ae4, #b75cff);
     border: none;
-    border-radius: calc(100vw / 9.9);
+    border-radius: calc(100vw / 323.6);
   }
 
   button > span {
@@ -107,7 +118,8 @@
   }
   
   .link {
-    margin: calc(100vw / 78) calc(100vw / 72) 0px 0px;
+    width: 87.94%;
+    margin: 0px auto;
     text-align: right;
     font-size: 0.8rem;
     font-weight: 600;
