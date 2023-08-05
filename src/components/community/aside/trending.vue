@@ -2,12 +2,10 @@
   <div class="main-container">
     <h4>Trendings</h4>
     <div v-for="trending in trendings" class="container">
-      <div>
-        <img :src="setImage(trending.imgSrc)" :alt="trending.imgAlt">
-        <div>
-          <p>{{ trending.name }}</p>
-          <p>{{ trending.email }}</p>
-        </div>
+      <img :src="setImage(trending.imgSrc)" :alt="trending.imgAlt">
+      <div class="text">
+        <p>{{ trending.name }}</p>
+        <p>{{ trending.email }}</p>
       </div>
       <p>{{ trending.position }}</p>
     </div>
@@ -39,15 +37,17 @@
   .main-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     width: 100%;
-    height: calc(100vw / 4.5);
-    margin: calc(100vw / 96) 0px;
+    height: 21.29%;
+    margin: 0px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: calc(100vw / 336.45);
   }
 
   h4 {
-    margin: calc(100vw / 72) auto calc(100vw / 57.6) calc(100vw / 72);
+    width: 87.94%;
+    margin: 0px auto;
     font-size: 1rem;
     font-weight: 600;
     text-align: left;
@@ -56,57 +56,55 @@
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 89%;
-    height: calc(100vw / 25.06);
-    margin: calc(100vw / 288) auto;
+    height: 17.96%;
+    margin: 0px auto;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: calc(100vw / 380.95);
   }
 
-  .container > div {
-    display: flex;
-    align-items: center;
-  }
-
   img {
-    width: calc(100vw / 27.6);
+    width: 16.67%;
     height: 88%;
     border-radius: calc(100vw / 380.95);
-    margin-right: calc(100vw / 126.98);
+    margin-right: 3.73%;
   }
 
-  .container > div > div {
+  .text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: calc(100vw / 46.45);
+    height: 53.94%;
+    width: 53.5%;
   }
 
-  .container > div > div > p {
+  .text > p {
     margin: 0px;
   }
 
-  .container > div > div :first-child {
+  .text :first-child {
     font-size: 0.68rem;
     font-weight: 600;
   }
 
-  .container > div > div :last-child {
+  .text :last-child {
     font-size: 0.49rem;
     font-weight: 500;
     opacity: 0.5;
   }
 
   .container > p {
-    margin: auto calc(100vw / 144);
+    margin: auto 3.29%;
     font-size: 0.53rem;
     font-weight: 500;
     opacity: 0.5;
   }
  
   .link {
-    margin: calc(100vw / 78) calc(100vw / 72) 0px 0px;
+    width: 87.94%;
+    margin: 0px auto;
     text-align: right;
     font-size: 0.8rem;
     font-weight: 600;
