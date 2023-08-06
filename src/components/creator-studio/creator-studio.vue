@@ -40,12 +40,14 @@
   .text-container {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    justify-content: space-between;
+    width: 41.46%;
     height: calc(100vw / 6.61);
     margin: 0px auto;
   }
 
   h4 {
+    width: 100%;
     font-size: 2rem;
     font-weight: 700;
     margin: 0px;
@@ -53,9 +55,10 @@
   }
 
   p {
-    width: calc(100vw / 3.27);
+    width: 73.87%;
     font-size: 1rem;
     font-weight: 500;
+    line-height: 180%;
     opacity: 0.5;
     margin: 0px auto;
   }
@@ -72,9 +75,25 @@
     width: 48%;
     height: 100%;
     border-radius: calc(100vw / 144);
+    border: none;
+  }
+
+  button > span {
     font-family: "Poppins";
     font-size: 1.3rem;
     color: #ffffff;
+    transition: 0.5s ease-in-out;
+  }
+
+  button:hover {
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    transition: 0.5s ease-in-out;
+  }
+
+  button:hover > span {
+    font-size: 2rem;
+    transition: 0.5s ease-in-out;
   }
 
   .first {
